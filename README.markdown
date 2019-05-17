@@ -2,18 +2,11 @@ openssl-xcode
 =============
 
 This is an XCode project skeleton structure that can be used to build a static 
-libcrypto.a library for use in Mac and iPhone projects. 
+libcrypto.a and libssl.a libraries for use in MacOS and iOS/tvOS projects. 
 
-It is specifically intended for use in building secure iPhone 
-applications alongside [SQLCipher](http://www.zetetic.net/software/sqlcipher).
+This project was forked from [michaeltyson/openssl-xcode](https://github.com/michaeltyson/openssl-xcode) and specifically updated to target 64-bit architectures [x86_64, ARM64] and combination 64-bit/32-bit universal builds to generate static OpenSSL libraries against XCode toolchain build tools circa OSX 10.14 and iOS 12.2 with compatibility as far back as 10.6 and 8.0 respectively.  It has successfully generated x86_64 and arm64 static openssl libs against the latest git pull of OpenSSL 3.0.0 -- but these generated libs have not been tested just yet.  
 
-openssl-xcode was developed by Stephen Lombardo at Zetetic LLC.
-
- sjlombardo at zetetic.net  
- http://www.zetetic.net
- 
-It was adapted for use with source archives by Michael Tyson of 
-A Tasty Pixel (michael at atastypixel.com)
+The remainder of the README was composed by and forked from Michael Tyson's branch:
 
 Usage
 -----
